@@ -28,7 +28,7 @@
         <form method="POST">
             <div class="row">
                 <div class="input-group mb-3">
-                    {% if generos_preferidosx %}
+                    {% if generos_preferidos %}
                         {% for genero in generos_preferidos.split(",")[:3] %}
                             <input type="submit" name="intent" value="Recomiendame una película de {{ genero.strip() }}" class="btn btn-primary btn-shortcut" />
                         {% endfor %}
